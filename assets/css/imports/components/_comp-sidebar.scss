@@ -1,0 +1,82 @@
+//Sidebar Css
+
+.sidebar_nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 99;
+    background: #101515;
+    width: 60px;
+    height: 100vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    .logo_section{
+        a{
+            display: inline-block;
+            padding: 20px 0px;
+        }
+        img{
+            width: 40px;
+        }
+    }
+    .sidebar_menu{
+        padding: 0px;
+        margin-top: 20px;
+        list-style: none;
+        .sidebar_dropdown {
+            margin: 5px 0px;
+            position: relative;
+            > a{
+                display: inline-block;
+                position: relative;
+                padding: 10px;
+                border-radius: 10px;
+                img{
+                    width: 20px
+                }
+            }
+            &.active{
+                > a{
+                    @extend %primary-bg;
+                    &:before{
+                        content: '';
+                        @extend %primary-bg;
+                        width: 3px;
+                        height: 40px;
+                        border-top-right-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        position: absolute;
+                        top: 0px;
+                        left: -10px;
+                    }
+                }
+            }
+            .sidebar_submenu{
+                display: none;
+                position: absolute;
+                left: 52px;
+                top: 0px;
+                background: #101515;
+                padding: 10px;
+                width: 160px;
+                border-radius: 10px;
+                > ul{
+                    list-style: none;
+                    margin: 0px;
+                    padding: 0px;
+                    li a{
+                        padding: 8px 10px;
+                        @extend %white-color;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.bs-tooltip-end { 
+    left: 15px !important; 
+ }

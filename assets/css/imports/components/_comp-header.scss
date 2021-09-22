@@ -1,0 +1,46 @@
+//Header Css
+
+.header{
+    @extend %white-bg;
+    height: 50px;
+    width: 100%;
+    padding: 10px 20px 10px 130px;
+    .profile_section{
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        a{
+            display: inline-block;
+            padding: 0px 20px;
+
+        }
+    }
+    .notification{
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        a{
+            display: inline-block;
+            padding: 0px 20px;
+            position: relative;
+            &.active{
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: -3px;
+                    right: 20px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 15px;
+                    background: $orange;
+                    border: 1px solid $white;
+                }
+            }
+        }
+    }
+    .header_partner{
+        img{
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+//New Pack Css
+
+.new_pack_form{
+    min-width: 600px;
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 40px 20px;
+}
+.new_pack_preview{
+    min-width: 500px;
+    background: rebeccapurple;
+    border-radius: 10px;
+    padding: 40px 20px;
+    position: relative;
+    align-self: stretch;
+}
+
+@media (min-width: 1400px){
+    .new_pack_form{
+        min-width: 700px;
+        max-width: 700px;
+    }
+    .new_pack_preview{
+        min-width: 650px;
+    }
+}

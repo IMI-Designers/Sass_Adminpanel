@@ -1,0 +1,70 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F3F3F8;
+    font-size: 14px;
+    line-height: 1.5 !important;
+    @extend %regular-font;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;
+}
+a{
+    text-decoration: none;
+    @extend %black-color;
+}
+a:focus,button:focus,input:focus,textarea:focus,select:focus,.form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+a:hover{
+    text-decoration: none;
+    @extend %black-color;
+}
+.pointer{
+    cursor: pointer;
+}
+.flex_grp_between{
+    @extend %flex_grp_between;
+}
+.flex_grp_center{
+    @extend %flex_grp_center;
+}
+.flex_grp_align_center{
+    @extend %flex_grp_align_center;
+}
+.flex_grp_align_start{
+    @extend %flex_grp_align_start;
+}
+.text-ellipsis{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.flex1{
+    flex: 1;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.text-break-all{
+    word-break: break-all;
+}
+.after-none::after{
+    content: none;
+}
+.cs_padding1{
+    padding: 25px 20px;
+}
+.main_wrapper{
+    padding: 30px 20px 30px 80px;
+}
+.white_card{
+    @extend %white-bg;
+    border-radius: 10px;
+}

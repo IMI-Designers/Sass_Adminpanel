@@ -1,0 +1,28 @@
+//Typography
+
+.page_title{
+  @extend %semibold-font;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.card_color_title{
+  font-size: 20px;
+  @extend %primary-color;
+}
+
+.font12{
+  font-size: 12px;
+}
+
+.label_txt{
+  font-size: 13px;
+  color: $label;
+  @extend %medium-font;
+  margin-bottom: 8px;
+}
+
+.modal-title{
+  @extend %semibold-font;
+  font-size: 16px;
+}

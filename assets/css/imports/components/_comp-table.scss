@@ -1,0 +1,113 @@
+//Table Css
+
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    display: inline-block;
+    &.green_dot{
+        background: #28C26A;
+    }
+    &.inactive_dot{
+        @extend %primary-bg;
+    }
+    &.red_dot{
+        background: #F3011B;
+    }
+}
+
+// .dataTables_length,.dataTables_filter,.dataTables_info,.dataTables_paginate{
+//     display: none;
+// }
+
+table.dataTable{
+    border-bottom: none !important;
+    thead th{
+        background-color: rgba(234, 234, 234, 0.5);
+        padding: 20px 15px 20px 20px;
+        // @extend %medium-font;
+        font-size: 14px;
+        border-bottom: 0px;
+        &.sorting{
+            background-image: url('../images/sorting.svg') !important;
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+        &.sorting_asc{
+            background-image: url('../images/sort-up.svg') !important;
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+        &.sorting_desc{
+            background-image: url('../images/sort-down.svg') !important;
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+        &:first-child{
+            background-position: 20px 50%;
+        }
+    }
+    tbody td{
+        padding: 18px 15px 18px 20px;
+        color: $dark-gray;
+        border-color: rgba(192, 192, 192, 0.4) !important;
+        box-shadow: none;
+    }
+}
+
+.table_pagination{
+    background-color: rgba(234, 234, 234, 0.5);
+    padding: 20px 30px;
+    .form-control{
+        width: 60px;
+        height: calc(2em + -2px);
+        padding: 4px 10px;
+    }
+    .cs_select::before{
+        top: 11px;
+        right: 8px;
+    }
+}
+
+.dataTables_wrapper {
+    .dataTables_info{
+        padding-top: 0px;
+    }
+    .dataTables_length{
+        select{
+            height: 30px;
+            width: 60px;
+        }
+    }
+    .dataTables_paginate{
+        display: flex;
+        align-items: center;
+        padding-top: 0px;
+        margin-left: 40px;
+        .paginate_button{
+            width: 30px;
+            background: $white !important;
+            height: 30px;
+            border: 1px solid $disable !important;
+            border-radius: 4px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+            img{
+              width: 14px;
+            }
+            &:hover{
+              background: #E2F0F4;
+            }
+            &.disabled{
+                img{
+                    opacity: .4;
+                }
+            }
+        }
+    } 
+}
+
+

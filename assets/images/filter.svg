@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1533" data-name="Rectangle 1533" width="20" height="20" transform="translate(211 406)" fill="#000f14"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1447" data-name="Group 1447" transform="translate(-899 -120)">
+    <g id="Mask_Group_20" data-name="Mask Group 20" transform="translate(688 -286)" clip-path="url(#clip-path)">
+      <g id="Group_201" data-name="Group 201" transform="translate(211 406)">
+        <g id="Group_192" data-name="Group 192">
+          <path id="Path_598" data-name="Path 598" d="M19.25,3.5H7A.75.75,0,0,1,7,2H19.25a.75.75,0,0,1,0,1.5Z" fill="#000f14"/>
+        </g>
+        <g id="Group_193" data-name="Group 193">
+          <path id="Path_599" data-name="Path 599" d="M3,3.5H.75A.75.75,0,0,1,.75,2H3A.75.75,0,0,1,3,3.5Z" fill="#000f14"/>
+        </g>
+        <g id="Group_194" data-name="Group 194">
+          <path id="Path_600" data-name="Path 600" d="M19.25,10.75H14a.75.75,0,0,1,0-1.5h5.25a.75.75,0,0,1,0,1.5Z" fill="#000f14"/>
+        </g>
+        <g id="Group_195" data-name="Group 195">
+          <path id="Path_601" data-name="Path 601" d="M10,10.75H.75a.75.75,0,0,1,0-1.5H10a.75.75,0,0,1,0,1.5Z" fill="#000f14"/>
+        </g>
+        <g id="Group_196" data-name="Group 196">
+          <path id="Path_602" data-name="Path 602" d="M19.25,18H9a.75.75,0,0,1,0-1.5H19.25a.75.75,0,0,1,0,1.5Z" fill="#000f14"/>
+        </g>
+        <g id="Group_197" data-name="Group 197">
+          <path id="Path_603" data-name="Path 603" d="M5,18H.75a.75.75,0,0,1,0-1.5H5A.75.75,0,0,1,5,18Z" fill="#000f14"/>
+        </g>
+        <g id="Group_198" data-name="Group 198">
+          <path id="Path_604" data-name="Path 604" d="M5,5.5A2.75,2.75,0,1,1,7.75,2.75,2.752,2.752,0,0,1,5,5.5Zm0-4A1.25,1.25,0,1,0,6.25,2.75,1.252,1.252,0,0,0,5,1.5Z" fill="#000f14"/>
+        </g>
+        <g id="Group_199" data-name="Group 199">
+          <path id="Path_605" data-name="Path 605" d="M12,12.75A2.75,2.75,0,1,1,14.75,10,2.752,2.752,0,0,1,12,12.75Zm0-4A1.25,1.25,0,1,0,13.25,10,1.252,1.252,0,0,0,12,8.75Z" fill="#000f14"/>
+        </g>
+        <g id="Group_200" data-name="Group 200">
+          <path id="Path_606" data-name="Path 606" d="M7,20a2.75,2.75,0,1,1,2.75-2.75A2.752,2.752,0,0,1,7,20Zm0-4a1.25,1.25,0,1,0,1.25,1.25A1.252,1.252,0,0,0,7,16Z" fill="#000f14"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

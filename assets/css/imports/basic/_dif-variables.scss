@@ -1,0 +1,114 @@
+// GLOBAL VARIABLES
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/Poppins-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('fonts/Poppins-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('fonts/Poppins-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//Fonts
+$bold-font:'Poppins-Bold', Arial, Helvetica, sans-serif;
+$semibold-font:'Poppins-SemiBold', Arial, Helvetica, sans-serif;
+$medium-font:'Poppins-Medium', Arial, Helvetica, sans-serif;
+$regular-font:'Poppins-Regular', Arial, Helvetica, sans-serif;
+$light-font:'Poppins-Light', Arial, Helvetica, sans-serif;
+
+//Colors
+$primary:#00556F;
+$orange:#FFB200;
+$black:#000F14;
+$label: #3C4245;
+$placeholder: #656569;
+$white:#FFFFFF;
+$disable: #C0C0CA;
+$dark-gray:#5F686A;
+$light-yellow-bg:#FFFCF5;
+$light-gray-bg: #F8F8F8;
+$primary-hover: #03465A;
+$orange-hover: #EBA400;
+
+
+//Extends
+%bold-font{
+    font-family: $bold-font;
+}
+%semibold-font{
+    font-family: $semibold-font;
+}
+%medium-font{
+    font-family: $medium-font;
+}
+%regular-font{
+    font-family: $regular-font;
+}
+%light-font{
+    font-family: $light-font;
+}
+
+%primary-color{
+    color: $primary;
+}
+%black-color{
+    color: $black;
+}
+%white-color{
+    color: $white;
+}
+%primary-bg{
+    background: $primary;
+}
+%white-bg{
+    background: $white;
+}
+
+%flex_grp_between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+%flex_grp_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%flex_grp_align_center{
+    display: flex;
+    align-items: center;
+}
+%flex_grp_align_start{
+    display: flex;
+    align-items: flex-start;
+}

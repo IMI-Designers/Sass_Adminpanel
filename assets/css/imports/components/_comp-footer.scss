@@ -1,0 +1,14 @@
+//Footer Css
+
+.footer{
+    background: $placeholder;
+    padding: 20px 30px 20px 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    .copyright{
+        @extend %white-color;
+    }
+}

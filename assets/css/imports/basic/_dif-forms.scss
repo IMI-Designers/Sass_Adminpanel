@@ -1,0 +1,202 @@
+//Forms
+
+.form-control{
+  font-size: 14px;
+  border-radius: 4px;
+  @extend %white-bg;
+  border-color: $disable;
+  height: calc(1.5em + 1rem + 3px);
+  padding: 8px 16px;
+  &:focus{
+    border-color: $disable;
+    @extend %white-bg;
+  }
+  &:disabled,&.disabled{
+    color: $disable;
+  }
+}
+textarea.form-control{
+  height: 8em;
+  min-height: auto;
+  resize: none;
+}
+
+.cs_select{
+  position:relative;
+  select{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    text-indent:1px;
+    text-overflow:'';
+    padding-right: 40px;
+    &::-ms-expand {
+      display:none;
+    }
+  }
+  &::before{
+    position:absolute;
+    content:'';
+    background: url(../images/chevron-down.svg) no-repeat;
+    background-size: cover;
+    right:15px;
+    top:14px;
+    width: 10px;
+    height: 5px;
+    pointer-events:none;
+  }
+}
+
+//Placeholder
+::placeholder{
+  color:$placeholder;
+  opacity: 1;
+  font-size: 14px;
+}
+::-webkit-input-placeholder{
+  color:$placeholder;
+  font-size: 14px;
+}
+::-moz-placeholder{
+  color:$placeholder;
+  font-size: 14px;
+}
+:-ms-input-placeholder{
+  color:$placeholder;
+  font-size: 14px;
+}
+:-moz-placeholder{
+  color:$placeholder;
+  font-size: 14px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_icon{
+  position: relative;
+  button{
+    position: absolute;
+    box-shadow: none;
+    border: none;
+    background: none;
+    padding: 5px;
+    img{
+      width: 20px;
+    }
+  }
+  &.left-icon{
+    .form-control{
+      padding-left: 50px;
+    }
+    button{
+      top: 5px;
+      left: 12px;
+    }
+  }
+  &.right-icon{
+    .form-control{
+      padding-right: 50px;
+    }
+    button{
+      top: 5px;
+      right: 12px;
+    }
+  }
+  &.left-right-icon{
+    .form-control{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .left-icon{
+      top: 5px;
+      left: 12px;
+    }
+    .right-icon{
+      top: 5px;
+      right: 12px;
+    }
+  }
+}
+
+
+
+.custom_radio,.custom_checkbox{
+  position:absolute;
+  opacity:0;
+}
+
+.custom_radio + label{
+  position:relative;
+  cursor:pointer;
+  padding: 0;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  &::before{
+      content:"";
+      margin-right:10px;
+      display:inline-block;
+      vertical-align:text-top;
+      width:20px;
+      height:20px;
+      border-radius:20px;
+      background:$light-yellow-bg;
+      border: 1px solid $disable;
+      margin-left: -30px;
+  }
+}
+
+
+.custom_checkbox + label{
+  position:relative;
+  cursor:pointer;
+  padding: 0;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  &::before{
+      content:"";
+      margin-right:15px;
+      display:inline-block;
+      vertical-align:middle;
+      width:28px;
+      height:28px;
+      border-radius:3px;
+      background:$light-yellow-bg;
+      border: 1px solid $disable;
+      margin-left: -30px;
+  }
+  &::after{
+    content: url(../images/checkmark.svg);
+    position: absolute;
+    left: 4px;
+    top: 4px;
+  }
+}
+
+.custom_radio:checked + label:before{
+  border: 5px solid $primary;
+}
+
+.custom_checkbox:checked + label:before{
+  @extend %primary-bg;
+  border: 1px solid $primary;
+}
+
+.custom_checkbox:checked + label:after {
+  content: url(../images/checkmark.svg);
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.custom_radio:disabled + label,.custom_checkbox:disabled + label{
+  color:$light-yellow-bg;
+  cursor:auto;
+}
+
+.custom_radio:disabled + label:before,.custom_checkbox:disabled + label:before{
+  box-shadow:none;
+  background:$light-yellow-bg;
+}

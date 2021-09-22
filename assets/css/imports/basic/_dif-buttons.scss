@@ -1,0 +1,123 @@
+//Buttons
+
+.cs_btn {
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid;
+  text-align: center;
+  padding: 8px 20px;
+  @extend %white-color;
+  @extend %medium-font;
+  min-width: 130px;
+  height: calc(2em + 12px);
+  display: inline-block;
+  text-decoration: none;
+  img{
+    width: 16px;
+  }
+}
+
+.cs_btn_primary{
+  @extend %primary-bg;
+  border-color: $primary;
+  &:hover{
+    background: $primary-hover;
+    border-color: $primary-hover;
+    @extend %white-color;
+  }
+  &.disabled,&:disabled{
+    background: $disable;
+    border-color: $disable;
+    @extend %white-color;
+    &:hover{
+      background: $disable;
+      border-color: $disable;
+      @extend %white-color;
+    }
+  }
+}
+
+.cs_btn_orange{
+  background: $orange;
+  border-color: $orange;
+  &:hover{
+    background: $orange-hover;
+    border-color: $orange-hover;
+    @extend %white-color;
+  }
+  &.disabled,&:disabled{
+    background: $disable;
+    border-color: $disable;
+    @extend %white-color;
+    &:hover{
+      background: $disable;
+      border-color: $disable;
+      @extend %white-color;
+    }
+  }
+}
+
+.cs_btn_sm{
+  min-width: auto;
+  height: calc(1.5em + 1rem + 4px);
+  padding: 10px 32px;
+  font-size: 12px;
+}
+
+.btn-block{
+  min-width: auto;
+  display: block;
+  width: 100%;
+}
+
+.hyperlink{
+  @extend %medium-font;
+  @extend %primary-color;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+  &:hover{
+    color: $primary-hover;
+    text-decoration: underline;
+  }
+  img{
+    width: 20px;
+  }
+}
+
+.rectangle_btn{
+  width: 40px;
+  @extend %white-bg;
+  height: 40px;
+  border: 1px solid $disable;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 20px;
+  }
+  &:hover{
+    background: #E2F0F4;
+  }
+}
+.sm_rectangle_btn{
+  width: 30px;
+  @extend %white-bg;
+  height: 30px;
+  border: 1px solid $disable;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 14px;
+  }
+  &:hover{
+    background: #E2F0F4;
+  }
+}

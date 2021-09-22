@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--IPhone meta tags-->
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+    <title>SaaS Admin</title>
+
+    <!--/* -- Brand Favicon -- */-->
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+
+    <!-- /* -- BOOTSTRAP CSS V 5.0.1 -- */ -->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+    <!-- /* -- Swiper CSS V 6.6.1 -- */ -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css">
+    <!-- /* -- Animate CSS -- */ -->
+    <link rel="stylesheet" href="assets/css/vendors/animate.css">
+    <!-- /* -- Datatable CSS V 1.11.2 -- */ -->
+    <link rel="stylesheet" href="assets/css/vendors/datatables.min.css">
+
+    <!--/* -- Custom CSS V 1.0 -- */-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+
+    <header class="header flex_grp_between">
+        <div class="header_left">
+            
+        </div>
+        <div class="header_right flex_grp_align_center">
+            <div class="header_partner me-3">
+                <img src="assets/images/partner-logo.png" alt="">
+            </div>
+            <div class="notification">
+                <a href="#" class="active">
+                    <img src="assets/images/bell.svg" alt="">
+                </a>
+            </div>
+            <div class="profile_section">
+                <a href="#">
+                    <img src="assets/images/avtar.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sidebar_nav">
+        <div class="logo_section flex_grp_center">
+            <a href="#">
+                <img src="assets/images/logo.svg" alt="">
+            </a>
+        </div><!--logo_section-->
+        <ul class="sidebar_menu flex_grp_align_center flex-column">
+            <li class="sidebar_dropdown">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
+                    <img src="assets/images/dashboard.svg" alt="">
+                </a>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar_dropdown">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="User">
+                    <img src="assets/images/user.svg" alt="">
+                </a>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar_dropdown">
+                <a href="#" class="active" data-bs-toggle="tooltip" data-bs-placement="right" title="Services">
+                    <img src="assets/images/pack.svg" alt="">
+                </a>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Pack Creation</a>
+                        </li>
+                        <li>
+                            <a href="#">Campaigns</a>
+                        </li>
+                        <li>
+                            <a href="#">Migrations</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar_dropdown">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Subscription">
+                    <img src="assets/images/subscription.svg" alt="">
+                </a>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar_dropdown">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Settings">
+                    <img src="assets/images/settings.svg" alt="">
+                </a>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar_dropdown">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="API">
+                    <img src="assets/images/api.svg" alt="">
+                </a>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar_dropdown">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Report">
+                    <img src="assets/images/report.svg" alt="">
+                </a>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar_dropdown">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Log">
+                    <img src="assets/images/log.svg" alt="">
+                </a>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar_dropdown">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Help">
+                    <img src="assets/images/help.svg" alt="">
+                </a>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main_wrapper">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="flex_grp_between">
+                    <h3 class="page_title">PARTNERS</h3>
+                    <div class="page_actions flex_grp_align_center">
+                        <a href="#" class="hyperlink me-4">
+                            <img src="assets/images/info.svg" class="me-2" alt="">
+                            Help
+                        </a>
+                        <a href="create-pack.html" class="cs_btn cs_btn_primary">Create Partners</a>
+                    </div>
+                </div>
+            </div>
+        </div><!--row-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="white_card cs_padding1">
+                    <div class="flex_grp_between mb-4">
+                        <h3 class="card_color_title">Partners list</h3>
+                        <div class="card_actions flex_grp_align_center">
+                            <div class="dropdown">
+                                <button class="rectangle_btn ms-2 dropdown-toggle after-none"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/download.svg" alt="">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">PDF</a></li>
+                                    <li><a class="dropdown-item" href="#">Exel</a></li>
+                                </ul>
+                            </div>
+                            <button class="rectangle_btn ms-2">
+                                <img src="assets/images/link.svg" alt="">
+                            </button>
+                            <button class="rectangle_btn ms-2">
+                                <img src="assets/images/filter.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <table id="myTable" class="table" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Code</th>
+                                        <th>Name</th>
+                                        <th>Login Id</th>
+                                        <th>Type</th>
+                                        <th>Created on</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                    <tr>
+                                        <td>
+                                            <span class="dot green_dot"></span>
+                                        </td>
+                                        <td>00795</td>
+                                        <td>
+                                            <a href="#" class="flex_grp_align_center">
+                                                For Security testing
+                                                <img src="assets/images/chevron-down.svg" class="ms-2" alt="">
+                                            </a>
+                                        </td>
+                                        <td>TH688</td>
+                                        <td>Service Parner</td>
+                                        <td>9/4/20 1:48:58 PM</td>
+                                        <td>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/lock.svg" alt="">
+                                            </a>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="dot inactive_dot"></span>
+                                        </td>
+                                        <td>00795</td>
+                                        <td>
+                                            <a href="#" class="flex_grp_align_center">
+                                                For Security testing
+                                                <img src="assets/images/chevron-down.svg" class="ms-2" alt="">
+                                            </a>
+                                        </td>
+                                        <td>TH688</td>
+                                        <td>Service Parner</td>
+                                        <td>9/4/20 1:48:58 PM</td>
+                                        <td>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/lock.svg" alt="">
+                                            </a>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="dot red_dot"></span>
+                                        </td>
+                                        <td>00795</td>
+                                        <td>
+                                            <a href="#" class="flex_grp_align_center">
+                                                For Security testing
+                                                <img src="assets/images/chevron-down.svg" class="ms-2" alt="">
+                                            </a>
+                                        </td>
+                                        <td>TH688</td>
+                                        <td>Service Parner</td>
+                                        <td>9/4/20 1:48:58 PM</td>
+                                        <td>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/lock.svg" alt="">
+                                            </a>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="dot red_dot"></span>
+                                        </td>
+                                        <td>00795</td>
+                                        <td>
+                                            <a href="#" class="flex_grp_align_center">
+                                                For Security testing
+                                                <img src="assets/images/chevron-down.svg" class="ms-2" alt="">
+                                            </a>
+                                        </td>
+                                        <td>TH688</td>
+                                        <td>Service Parner</td>
+                                        <td>9/4/20 1:48:58 PM</td>
+                                        <td>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/lock.svg" alt="">
+                                            </a>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="dot red_dot"></span>
+                                        </td>
+                                        <td>00795</td>
+                                        <td>
+                                            <a href="#" class="flex_grp_align_center">
+                                                For Security testing
+                                                <img src="assets/images/chevron-down.svg" class="ms-2" alt="">
+                                            </a>
+                                        </td>
+                                        <td>TH688</td>
+                                        <td>Service Parner</td>
+                                        <td>9/4/20 1:48:58 PM</td>
+                                        <td>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/lock.svg" alt="">
+                                            </a>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="dot red_dot"></span>
+                                        </td>
+                                        <td>00795</td>
+                                        <td>
+                                            <a href="#" class="flex_grp_align_center">
+                                                For Security testing
+                                                <img src="assets/images/chevron-down.svg" class="ms-2" alt="">
+                                            </a>
+                                        </td>
+                                        <td>TH688</td>
+                                        <td>Service Parner</td>
+                                        <td>9/4/20 1:48:58 PM</td>
+                                        <td>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/lock.svg" alt="">
+                                            </a>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="dot red_dot"></span>
+                                        </td>
+                                        <td>00795</td>
+                                        <td>
+                                            <a href="#" class="flex_grp_align_center">
+                                                For Security testing
+                                                <img src="assets/images/chevron-down.svg" class="ms-2" alt="">
+                                            </a>
+                                        </td>
+                                        <td>TH688</td>
+                                        <td>Service Parner</td>
+                                        <td>9/4/20 1:48:58 PM</td>
+                                        <td>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/lock.svg" alt="">
+                                            </a>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="dot red_dot"></span>
+                                        </td>
+                                        <td>00795</td>
+                                        <td>
+                                            <a href="#" class="flex_grp_align_center">
+                                                For Security testing
+                                                <img src="assets/images/chevron-down.svg" class="ms-2" alt="">
+                                            </a>
+                                        </td>
+                                        <td>TH688</td>
+                                        <td>Service Parner</td>
+                                        <td>9/4/20 1:48:58 PM</td>
+                                        <td>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/lock.svg" alt="">
+                                            </a>
+                                            <a href="#" class="ms-2">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <div class="flex_grp_align_center">
+                                <div class="flex_grp_align_center me-4">
+                                    <span class="dot green_dot me-2"></span>
+                                    <p class="mb-0 dark-gray font12">Active</p>
+                                </div>
+                                <div class="flex_grp_align_center me-4">
+                                    <span class="dot red_dot me-2"></span>
+                                    <p class="mb-0 dark-gray font12">Rejected</p>
+                                </div>
+                                <div class="flex_grp_align_center">
+                                    <span class="dot inactive_dot me-2"></span>
+                                    <p class="mb-0 dark-gray font12">Inactive</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--row-->
+                    <!-- <div class="row">
+                        <div class="col-md-12">
+                            <div class="table_pagination">
+                                <div class="flex_grp_between">
+                                    <p class="mb-0">1 - 10 of 150</p>
+                                    <div class="table_pagination_actions flex_grp_align_center">
+                                        <div class="flex_grp_align_center me-4">
+                                            <label class="me-2">Rows per page</label>
+                                            <div class="cs_select">
+                                                <select class="form-control" name="" id="">
+                                                    <option>10</option>
+                                                    <option>15</option>
+                                                    <option>20</option>
+                                                    <option>25</option>
+                                                    <option>30</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="flex_grp_align_center">
+                                            <button class="sm_rectangle_btn me-2">
+                                                <img src="assets/images/color-arrow-left.svg" alt="">
+                                            </button>
+                                            <button class="sm_rectangle_btn">
+                                                <img src="assets/images/color-arrow-right.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div><!--white_card-->
+            </div>
+        </div><!--row-->
+    </main>
+    
+    <footer class="footer">
+        <div class="flex_grp_between">
+            <div class="timezone_select">
+                <!-- <div class="timezone_select_trigger">
+                    <div class="flex_grp_center">
+                        <img src="" class="me-2" alt="">
+                        <p>(UTC+05:30) Chennai, Kolkata, New Delhi</p>
+                    </div>
+                    <button>
+                        Change
+                        <img src="assets/images/chevron-down.svg" alt="">
+                    </button>
+                </div>
+                <ul class="timezone_list">
+                    <li>
+                        <img src="" class="me-2" alt="">
+                        <p>(UTC+05:30) Chennai, Kolkata, New Delhi</p>
+                    </li>
+                    <li>
+                        <img src="" class="me-2" alt="">
+                        <p>(UTC+05:30) Chennai, Kolkata, New Delhi</p>
+                    </li>
+                </ul> -->
+            </div>
+            <p class="copyright mb-0">©2021 Saas Project, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--/* -- jQuery JS V 3.3.1 -- */-->
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <!--/* -- bootstrap JS Bundle V 5.0.1 -- */-->
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--/* -- Swiper JS V 6.6.1 -- */-->
+    <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+    <!-- /* -- Datatable CSS V 1.11.2 -- */ -->
+    <script type="text/javascript" src="assets/js/datatables.min.js"></script>
+
+    <!--/* -- Custom Js V 1.0 -- */-->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+</body>
+</html>
