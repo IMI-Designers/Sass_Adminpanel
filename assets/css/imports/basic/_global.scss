@@ -7,7 +7,7 @@
 
 body{
     background: #F3F3F8;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5 !important;
     @extend %regular-font;
     min-height: 100vh;
@@ -67,4 +67,11 @@ a:hover{
 .white_card{
     @extend %white-bg;
     border-radius: 10px;
+}
+
+//Large Screens
+@media (min-width: 1400px){
+    body{
+        font-size: 14px;
+    }
 }

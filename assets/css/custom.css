@@ -113,7 +113,7 @@ a, a:hover {
 }
 
 .cs_btn {
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   border-radius: 4px;
   border: 1px solid;
@@ -182,7 +182,7 @@ a, a:hover {
 }
 
 .hyperlink {
-  font-size: 14px;
+  font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,8 +202,8 @@ a, a:hover {
 }
 
 .rectangle_btn {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border: 1px solid #C0C0CA;
   border-radius: 4px;
   padding: 5px;
@@ -219,7 +219,7 @@ a, a:hover {
 }
 
 .rectangle_btn img {
-  width: 20px;
+  width: 16px;
 }
 
 .rectangle_btn:hover {
@@ -249,6 +249,19 @@ a, a:hover {
 
 .sm_rectangle_btn:hover {
   background: #E2F0F4;
+}
+
+@media (min-width: 1400px) {
+  .cs_btn, .hyperlink {
+    font-size: 14px;
+  }
+  .rectangle_btn {
+    width: 40px;
+    height: 40px;
+  }
+  .rectangle_btn img {
+    width: 20px;
+  }
 }
 
 .page_title {
@@ -522,7 +535,7 @@ input::-webkit-inner-spin-button {
 
 body {
   background: #F3F3F8;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5 !important;
   min-height: 100vh;
   position: relative;
@@ -581,6 +594,12 @@ a:hover {
 
 .white_card {
   border-radius: 10px;
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 /* Components */
@@ -752,7 +771,7 @@ table.dataTable {
 table.dataTable thead th {
   background-color: rgba(234, 234, 234, 0.5);
   padding: 20px 15px 20px 20px;
-  font-size: 14px;
+  font-size: 12px;
   border-bottom: 0px;
 }
 
@@ -851,6 +870,12 @@ table.dataTable tbody td {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled img {
   opacity: .4;
+}
+
+@media (min-width: 1400px) {
+  body, table.dataTable thead th {
+    font-size: 14px;
+  }
 }
 
 .side_overlay .modal-dialog {
