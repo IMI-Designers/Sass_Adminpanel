@@ -24,7 +24,7 @@ table.dataTable{
     border-bottom: none !important;
     thead th{
         background-color: rgba(234, 234, 234, 0.5);
-        padding: 20px 15px 20px 20px;
+        padding: 15px 15px 15px 20px;
         // @extend %medium-font;
         font-size: 12px;
         border-bottom: 0px;
@@ -48,7 +48,7 @@ table.dataTable{
         }
     }
     tbody td{
-        padding: 18px 15px 18px 20px;
+        padding: 15px 15px 15px 20px;
         color: $dark-gray;
         border-color: rgba(192, 192, 192, 0.4) !important;
         box-shadow: none;
@@ -57,7 +57,7 @@ table.dataTable{
 
 .table_pagination{
     background-color: rgba(234, 234, 234, 0.5);
-    padding: 20px 30px;
+    padding: 15px 20px;
     .form-control{
         width: 60px;
         height: calc(2em + -2px);
@@ -113,7 +113,14 @@ table.dataTable{
 
 //Large Screens
 @media (min-width: 1400px){
-    body,table.dataTable thead th{
+    .table.dataTable thead th{
         font-size: 14px;
+        padding: 20px 15px 20px 20px;
+    }
+    .table.dataTable tbody td{
+        padding: 18px 15px 18px 20px;
+    }
+    .table_pagination{
+        padding: 20px 30px;
     }
 }

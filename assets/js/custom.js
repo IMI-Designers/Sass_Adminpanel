@@ -33,3 +33,4 @@ $(".sidebar_dropdown > a").click(function() {
       $(this).parent().addClass("active");
     }
 });
+

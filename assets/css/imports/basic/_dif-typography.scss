@@ -2,12 +2,12 @@
 
 .page_title{
   @extend %semibold-font;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
 .card_color_title{
-  font-size: 20px;
+  font-size: 18px;
   @extend %primary-color;
 }
 
@@ -25,4 +25,15 @@
 .modal-title{
   @extend %semibold-font;
   font-size: 16px;
+}
+
+//Large Screens
+@media (min-width: 1400px){
+  .page_title{
+    font-size: 24px;
+  }
+  
+  .card_color_title{
+    font-size: 20px;
+  }
 }

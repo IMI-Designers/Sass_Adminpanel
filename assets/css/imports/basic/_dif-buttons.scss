@@ -65,6 +65,13 @@
   font-size: 12px;
 }
 
+.cs_btn_lg{
+  min-width: 200px;
+  height: calc(2em + 1rem + 6px);
+  padding: 10px 32px;
+  font-size: 14px;
+}
+
 .btn-block{
   min-width: auto;
   display: block;
@@ -75,7 +82,7 @@
   @extend %medium-font;
   @extend %primary-color;
   font-size: 12px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: underline;
   &:hover{

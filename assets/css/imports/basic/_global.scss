@@ -62,7 +62,7 @@ a:hover{
     padding: 25px 20px;
 }
 .main_wrapper{
-    padding: 30px 20px 30px 80px;
+    padding: 25px 20px 30px 80px;
 }
 .white_card{
     @extend %white-bg;
@@ -73,5 +73,8 @@ a:hover{
 @media (min-width: 1400px){
     body{
         font-size: 14px;
+    }
+    .main_wrapper{
+        padding: 30px 20px 30px 80px;
     }
 }
