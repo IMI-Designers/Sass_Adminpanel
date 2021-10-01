@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     .login_card{
-        max-width: 70vw;
+        max-width: 85vw;
         width: 100%;
         height: 80vh;
         @extend %white-bg;
@@ -37,7 +37,7 @@
             align-items: center;
             justify-content: center;
             .login_form{
-                max-width: 260px;
+                max-width: 300px;
                 width: 100%;
                 .login_logo{
                     text-align: center;
@@ -47,8 +47,42 @@
                     }
                 }
                 .form-control{
-                    height: calc(2em + 1rem + 6px);
+                    height: calc(2em + 1rem + 0px);
                 }
+            }
+        }
+    }
+}
+.login_tittle{
+    @extend %semibold-font;
+    font-size: 16px;
+}
+.success_img{
+    text-align: center;
+    img{
+        width: 100px;
+    }
+}
+.reset_wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background: #DEE4F0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .reset_card{
+        margin-top: 100px;
+        max-width: 500px;
+        width: 100%;
+        padding: 50px 80px;
+        @extend %white-bg;
+        border-radius: 10px;
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        &-img{
+            text-align: center;
+            img{
+                width: 120px;
             }
         }
     }
@@ -64,7 +98,7 @@
         .info_swiper_img{
             margin-bottom: 60px;
             img{
-                height: 200px;
+                height: 160px;
             }
         }
         h3{
@@ -92,18 +126,21 @@
 //Large Screens
 @media (min-width: 1400px){
     .login_wrapper .login_card{
-        .login_left{
-            width: 60%;
-        }
+        max-width: 70vw;
         .login_right{
-            width: 40%;
             .login_form{
-                max-width: 300px;
+                max-width: 360px;
+                .form-control{
+                    height: calc(2em + 1rem + 6px);
+                }
             }
         }
     }
     .info_swiper .swiper-slide .info_swiper_img{
         margin-bottom: 80px;
+        img{
+            height: 200px;
+        }
     }
     .info_swiper{
         padding-bottom: 80px;

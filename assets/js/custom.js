@@ -22,7 +22,7 @@ $('#myTable').DataTable({
     },
 });
 
-$(".sidebar_dropdown > a").click(function() {
+$(".sidebar_dropdown .sidebar_item").click(function() {
     $(".sidebar_submenu").slideUp(200);
     if ($(this).parent().hasClass("active")) {
       $(".sidebar_dropdown").removeClass("active");
@@ -34,3 +34,5 @@ $(".sidebar_dropdown > a").click(function() {
     }
 });
 
+// $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#0F0",boxzoom:false});
+// $("#boxscroll2").niceScroll("#contentscroll2",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true}); 

@@ -27,17 +27,23 @@
         .sidebar_dropdown {
             margin: 5px 0px;
             position: relative;
-            > a{
-                display: inline-block;
+            .sidebar_item{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
                 position: relative;
-                padding: 10px;
+                width: 40px;
+                height: 40px;
                 border-radius: 10px;
-                img{
-                    width: 20px
-                }
+                cursor: pointer;
+                // &:hover{
+                //     + .sidebar_submenu{
+                //         display: block
+                //     }
+                // }
             }
             &.active{
-                > a{
+                .sidebar_item{
                     @extend %primary-bg;
                     &:before{
                         content: '';
@@ -61,19 +67,61 @@
                 padding: 10px;
                 width: 160px;
                 border-radius: 10px;
+                .submenu_title{
+                    @extend %semibold-font;
+                    @extend %white-color;
+                    font-size: 12px;
+                    padding: 10px 10px 8px 10px;
+                    text-transform: uppercase;
+                }
                 > ul{
                     list-style: none;
                     margin: 0px;
                     padding: 0px;
                     li a{
                         padding: 8px 10px;
-                        @extend %white-color;
+                        color: #CCCCCC;
                         display: inline-block;
                     }
                 }
             }
         }
         
+    }
+}
+
+.sprite_img{
+    background: url('../images/sprite_img.svg') no-repeat;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    &.dashboard_img{
+        background-position: -12px -11px;
+    }
+    &.user_img{
+        background-position: -42px -11px;
+    }
+    &.services_img{
+        background-position: -72px -11px;
+    }
+    &.subscription_img{
+        background-position: -102px -11px;
+    }
+    &.setting_img{
+        background-position: -132px -11px;
+    }
+    &.api_img{
+        background-position: -12px -41px;
+    }
+    &.report_img{
+        background-position: -42px -41px;
+    }
+    &.log_img{
+        background-position: -72px -41px;
+    }
+    &.help_img{
+        background-position: -102px -41px;
     }
 }
 

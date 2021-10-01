@@ -61,28 +61,11 @@
         </div><!--logo_section-->
         <ul class="sidebar_menu flex_grp_align_center flex-column">
             <li class="sidebar_dropdown">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
-                    <img src="assets/images/dashboard.svg" alt="">
-                </a>
-                <div class="sidebar_submenu">
-                    <ul>
-                        <li>
-                            <a href="#">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 3</a>
-                        </li>
-                    </ul>
+                <div class="sidebar_item">
+                    <div class="sprite_img dashboard_img"></div>
                 </div>
-            </li>
-            <li class="sidebar_dropdown">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="User">
-                    <img src="assets/images/user.svg" alt="">
-                </a>
                 <div class="sidebar_submenu">
+                    <h4 class="submenu_title">Dashboard</h4>
                     <ul>
                         <li>
                             <a href="#">Link 1</a>
@@ -94,10 +77,27 @@
                 </div>
             </li>
             <li class="sidebar_dropdown">
-                <a href="#" class="active" data-bs-toggle="tooltip" data-bs-placement="right" title="Services">
-                    <img src="assets/images/pack.svg" alt="">
-                </a>
+                <div class="sidebar_item">
+                    <div class="sprite_img user_img"></div>
+                </div>
                 <div class="sidebar_submenu">
+                    <h4 class="submenu_title">User</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sidebar_dropdown">
+                <div class="sidebar_item">
+                    <div class="sprite_img services_img"></div>
+                </div>
+                <div class="sidebar_submenu">
+                    <h4 class="submenu_title">Services</h4>
                     <ul>
                         <li>
                             <a href="#">Pack Creation</a>
@@ -112,10 +112,11 @@
                 </div>
             </li>
             <li class="sidebar_dropdown">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Subscription">
-                    <img src="assets/images/subscription.svg" alt="">
-                </a>
+                <div class="sidebar_item">
+                    <div class="sprite_img subscription_img"></div>
+                </div>
                 <div class="sidebar_submenu">
+                    <h4 class="submenu_title">Subscription</h4>
                     <ul>
                         <li>
                             <a href="#">Link 1</a>
@@ -127,10 +128,11 @@
                 </div>
             </li>
             <li class="sidebar_dropdown">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Settings">
-                    <img src="assets/images/settings.svg" alt="">
-                </a>
+                <div class="sidebar_item">
+                    <div class="sprite_img setting_img"></div>
+                </div>
                 <div class="sidebar_submenu">
+                    <h4 class="submenu_title">Settings</h4>
                     <ul>
                         <li>
                             <a href="#">Link 1</a>
@@ -142,10 +144,11 @@
                 </div>
             </li>
             <li class="sidebar_dropdown">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="API">
-                    <img src="assets/images/api.svg" alt="">
-                </a>
+                <div class="sidebar_item">
+                    <div class="sprite_img api_img"></div>
+                </div>
                 <div class="sidebar_submenu">
+                    <h4 class="submenu_title">API</h4>
                     <ul>
                         <li>
                             <a href="#">Link 1</a>
@@ -157,10 +160,11 @@
                 </div>
             </li>
             <li class="sidebar_dropdown">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Report">
-                    <img src="assets/images/report.svg" alt="">
-                </a>
+                <div class="sidebar_item">
+                    <div class="sprite_img report_img"></div>
+                </div>
                 <div class="sidebar_submenu">
+                    <h4 class="submenu_title">Report</h4>
                     <ul>
                         <li>
                             <a href="#">Link 1</a>
@@ -172,10 +176,11 @@
                 </div>
             </li>
             <li class="sidebar_dropdown">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Log">
-                    <img src="assets/images/log.svg" alt="">
-                </a>
+                <div class="sidebar_item">
+                    <div class="sprite_img log_img"></div>
+                </div>
                 <div class="sidebar_submenu">
+                    <h4 class="submenu_title">Log</h4>
                     <ul>
                         <li>
                             <a href="#">Link 1</a>
@@ -187,10 +192,11 @@
                 </div>
             </li>
             <li class="sidebar_dropdown">
-                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Help">
-                    <img src="assets/images/help.svg" alt="">
-                </a>
+                <div class="sidebar_item">
+                    <div class="sprite_img help_img"></div>
+                </div>
                 <div class="sidebar_submenu">
+                    <h4 class="submenu_title">Help</h4>
                     <ul>
                         <li>
                             <a href="#">Link 1</a>
@@ -203,6 +209,7 @@
             </li>
         </ul>
     </nav>
+
 
     <main class="main_wrapper">
         <div class="row mb-4">
@@ -307,9 +314,9 @@
             <div class="modal-body">
             ...
             </div>
-            <div class="modal-footer">
-                <button type="button" class="cs_btn cs_btn_outline me-2" data-bs-dismiss="modal">Clear</button>
-                <button type="button" class="cs_btn cs_btn_orange">Save</button>
+            <div class="modal-footer flex_grp_center">
+                <button type="button" class="cs_btn cs_btn_outline cs_btn_lg me-2" data-bs-dismiss="modal">Clear</button>
+                <button type="button" class="cs_btn cs_btn_orange cs_btn_lg">Save</button><!--disabled-->
             </div>
         </div>
     </div>

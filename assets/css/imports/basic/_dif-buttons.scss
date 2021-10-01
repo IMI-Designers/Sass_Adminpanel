@@ -58,6 +58,12 @@
   }
 }
 
+.cs_btn_outline{
+  @extend %white-bg;
+  border-color: $disable;
+  color: $disable;
+}
+
 .cs_btn_sm{
   min-width: auto;
   height: calc(1.5em + 1rem + 4px);
@@ -68,7 +74,7 @@
 .cs_btn_lg{
   min-width: 200px;
   height: calc(2em + 1rem + 6px);
-  padding: 10px 32px;
+  padding: 13px 32px;
   font-size: 14px;
 }
 
@@ -110,6 +116,28 @@
   &:hover{
     background: #E2F0F4;
   }
+  .active_icon{
+    display: none;
+  }
+  &[aria-expanded="true"],.open{
+    border-color: $light_theme;
+    background: $light_theme;
+    width: 44px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    &:hover{
+      background: $light_theme;
+    }
+    .active_icon{
+      display: block;
+    }
+    .regular_icon{
+      display: none;
+    }
+  }
 }
 .sm_rectangle_btn{
   width: 30px;
@@ -126,6 +154,22 @@
   }
   &:hover{
     background: #E2F0F4;
+  }
+}
+.copy_button{
+  padding: 10px;
+  border: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: transparent;
+}
+.img_btn{
+  border: 0px;
+  background: transparent;
+  &:hover{
+    border: 0px;
+    background: transparent;
   }
 }
 

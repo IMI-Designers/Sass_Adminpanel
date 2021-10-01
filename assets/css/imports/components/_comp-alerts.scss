@@ -1,0 +1,63 @@
+//Alerts Css
+
+.border_alert{
+    background: $green;
+    padding: 15px;
+    border-left: 8px solid;
+    border-radius: 5px;
+    font-size: 12px;
+    @extend %medium-font;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    img{
+        width: 20px;
+    }
+}
+.border_alert_success{
+    background: rgba(4, 183, 94, 0.4);
+    border-color: $green;
+}
+
+.cs_badge{
+    @extend %semibold-font;
+    font-size: 8px;
+    text-transform: uppercase;
+    padding: 4px 15px 3px 15px;
+    border-radius: 20px;
+    display: inline-flex;
+    text-align: center
+}
+.cs_badge_success{
+    @extend %white-color;
+    background: $green;
+}
+.cs_badge_pending{
+    @extend %white-color;
+    background: $orange;
+}
+.cs_badge_danger{
+    @extend %white-color;
+    background: $red;
+}
+
+.circle_counter{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    @extend %semibold-font;
+    font-size: 7px;
+    @extend %white-color;
+    border-radius: 30px;
+    width: 14px;
+    height: 14px;
+    background: $red;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//Large Screens
+@media (min-width: 1400px){
+    
+}
